@@ -54,7 +54,7 @@ const mailSender = nodemailer.createTransport({
 function sendConfirmationEmail(username: string, confirmationToken: string) {
   return new Promise((resolve, reject) => {
     const mailOptions = {
-      from: 'kodi.connect.server@gmail.com',
+      from: 'malcolmrigg@gmail.com',
       to: username,
       subject: 'Kodi Connect - Confirm account', // Subject line
       html: `<p>To confirm Kodi Connect registration, click <a href="${hostUrl}/confirm/${confirmationToken}">here</a></p>`,
